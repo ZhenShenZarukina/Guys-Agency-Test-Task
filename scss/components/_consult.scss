@@ -1,0 +1,82 @@
+.consult {
+    background-color: $colorBlue;
+    color: $colorWhite;
+    padding: vw(87) vw(200);
+
+    &__title {
+        font-size: vw($mediumFont);
+        line-height: vw($largeLine);
+        margin-bottom: vw(28);
+    }
+
+    &__descr {
+        line-height: vw($mediumLine);
+        margin-bottom: vw(30);
+    }
+
+    &__inputs-block {
+        margin-bottom: vw(55);
+    }
+
+    &__input {
+        width: vw(396);
+        height: vw(45);
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $colorGreyText;
+        padding-bottom: 0;
+
+        &-name {
+            margin-right: vw(28);
+
+            &::placeholder {
+                position: absolute;
+                bottom: vw(5);
+                color: $colorGreyText;
+            }
+        }
+
+        &-tel {
+            &::placeholder {
+                position: absolute;
+                bottom: vw(5); 
+                color: $colorWhite;
+            }
+            &-label {
+                position: absolute;
+                font-size: vw($extraSmallFont);
+                line-height: vw($extraSmallLine);
+                color: $colorGreyText;
+            }
+        }
+
+        &:focus::placeholder {
+            color: transparent;
+        }
+    }
+    &__form-btn {
+        width: vw(820);
+        height: vw(50);
+        color: $colorBlue;
+        background-color: $colorWhite;
+        border-radius: 2px;
+        border: 3px solid transparent;
+	    transition: color .3s linear, background-color .3s linear, border .3s linear;
+
+		&:hover {
+			color: $colorWhite;
+			background-color: $colorBlue;
+			border: 3px solid $colorWhite;
+			transition: color .3s linear, background-color .3s linear, border .3s linear;
+		}	
+
+		&:active {
+			background-color: $colorGreyText;
+			color: $colorBlue;
+		}
+
+		&:focus-visible {
+			border: 3px solid $colorBlack;
+		}
+    }
+}

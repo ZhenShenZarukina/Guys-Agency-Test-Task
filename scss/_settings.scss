@@ -1,0 +1,69 @@
+//Сброс ненужных стилей
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	text-align: center;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+	&:focus-visible {
+		border: 1px solid $colorBlue;
+	}
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+//стили для всей страницы
+
+@function vw($value, $base: 1440) {
+	@return $value / $base * 100vw;
+}
+
+@function vmin($value, $base: 320) {
+	@return $value / $base * 100vmin;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: vw($smallFont);
+	line-height: vw($mediumLine);
+	font-weight: 500;
+	background-color: $colorWhite;
+	color: $colorBlue;
+}
+
+.container {
+	max-width: vw(1250);
+	padding: 0 vw(95);
+	margin: 0 auto;
+}

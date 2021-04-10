@@ -1,0 +1,203 @@
+.header {
+	border-bottom: 1px solid $colorAqua;
+	margin-bottom: vw(40);
+}
+
+//Header-Up
+
+.header__up {
+    display: flex;
+    justify-content: space-between;
+    padding-top: vw(20);
+    padding-bottom: vw(20);
+}
+
+.header__nav {
+    &-list {
+        display: flex;
+    }
+
+    &-item {
+        margin-right: vw(15);
+        font-weight: 400;
+		border-bottom: 1px solid transparent;
+		transition: border-bottom .3s linear, font-weight .3s linear;
+
+		&:hover {
+			border-bottom: 1px solid $colorBlue;
+			transition: border-bottom .3s linear, font-weight .3s linear;
+		}
+
+		&:active {
+			font-weight: 500;
+			border-bottom: 1px solid transparent;
+		}
+    }
+}
+
+.header__tel {
+    font-weight: 700;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom .3s linear, color .3s linear;
+
+		&:hover {
+			border-bottom: 2px solid $colorBlue;
+			transition: border-bottom .3s linear, color .3s linear;
+		}
+
+		&:active {
+			color: $colorLightBlue;
+			border-bottom: 2px solid transparent;
+		}
+}
+
+//Header-Down
+
+.header__down {
+	display: flex;
+	align-items: center;
+	padding-bottom: vw(10);
+}
+
+.header__logo {
+	width: vw(135);
+	height: vw(22);
+	margin-right: vw(30);
+}
+
+.header__catalog {
+	position: relative;
+	width: vw(127);
+	height: vw(40);
+	border: 3px solid transparent;
+	border-radius: vw(2);
+	color: $colorWhite;
+	background-color: $colorBlue;
+	margin-right: vw(20);
+	padding-left: vw(10);
+	transition: color .3s linear, background-color .3s linear, border .3s linear;
+	  
+	  svg {
+		position: absolute;
+		width: vw(21);
+		height: vw(21);
+		left: vw(10);
+		top: 20%;
+		path {
+			transition: fill .3s linear;
+		}
+		}
+
+		&:hover {
+			color: $colorBlue;
+			background-color: $colorWhite;
+			border: 3px solid $colorBlue;
+			transition: color .3s linear, background-color .3s linear, border .3s linear;
+			  svg path {
+				fill: $colorBlue;
+				}
+		}
+
+		&:active {
+			background-color: $colorGreyText;
+		}
+
+		&:focus-visible {
+			border: 3px solid $colorLightBlue;
+		}
+ 
+}
+
+.header__search {
+	position: relative;
+
+	  &-input {
+		width: vw(813);
+		height: vw(40);
+		border: 1px solid $colorBlue;
+		border-radius: vw(4);
+		background-color: transparent;
+		color: $colorBlue;
+		opacity: .7;
+		padding: vw(10) vw(20);
+		outline-color: $colorBlue;
+
+		&::placeholder {
+			color: $colorGreyText;
+			font-weight: 400;
+		}
+		&:focus::placeholder {
+			color: transparent;
+		}
+	  }
+	  &-btn {
+		position: absolute;
+		right: vw(10);
+		top: 25%;
+
+		svg {
+			width: vw(17);
+		    height: vw(17);
+			transition: width .3s linear, height .3s linear;
+
+			path {
+				transition: fill .3s linear;
+			}
+		}
+
+		&:hover svg {
+			width: vw(20);
+		    height: vw(20);
+		}
+
+		&:active svg path {
+			fill: $colorLightBlue;
+		}
+	}
+		
+}
+
+.header__icons {
+	margin-left: auto;
+
+	&-account {
+		margin-right: vw(15);
+
+		svg {
+			width: vw(30);
+			height: vw(30);
+			transition: width .3s linear, height .3s linear;
+			path {
+				transition: fill .3s linear;
+			}
+		}
+
+		&:hover svg{
+			width: vw(33);
+			height: vw(33);
+		}
+
+		&:active svg path {
+			fill: $colorLightBlue;
+		}
+	}
+
+	&-cart {
+		svg {
+			width: vw(30);
+			height: vw(30);
+			transition: width .3s linear, height .3s linear;
+			path {
+				transition: fill .3s linear;
+			}
+		}
+		&:hover svg{
+			width: vw(33);
+			height: vw(33);
+		}
+
+		&:active svg path {
+			fill: $colorLightBlue;
+		}
+	}
+}

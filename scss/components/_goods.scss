@@ -1,0 +1,219 @@
+.goods__type {
+    margin-bottom: vw(40);
+}
+
+.goods__subtype {
+    font-weight: 400;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .3s linear, font-weight .3s linear;
+
+    &:last-child {
+        color: $colorGreyText;
+		border-bottom: 1px solid transparent;
+		transition: border-bottom .3s linear, font-weight .3s linear;
+    }
+
+    &:hover {
+        border-bottom: 1px solid $colorBlue;
+        transition: border-bottom .3s linear, font-weight .3s linear;
+    }
+
+    &:active {
+        font-weight: 500;
+        border-bottom: 1px solid transparent;
+    }
+}
+
+//Selected 
+
+.selected__title {
+    font-size: vw($mediumFont);
+    line-height: vw($largeLine);
+    font-weight: 700;
+    margin-bottom: vw(10);
+}
+
+.selected__number {
+    display: block;
+    font-weight: 400;
+    margin-bottom: vw(40);
+}
+
+//Selected-Descr
+
+.selected__descr { 
+    display: flex;
+    margin-bottom: vw(100);
+    padding-left: vw(107);
+    padding-right: vw(60);
+
+    &-image {
+        margin-right: vw(140);
+    }
+
+    &-order {
+        width: vw(433);
+        height: vw(465);
+        padding: vw(20);
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    }
+}
+
+.selected__descr-model {
+    display: block;
+    margin-bottom: vw(20);
+}
+
+.selected__descr-btn-group {
+    margin-bottom: vw(30);
+}
+
+.selected__descr-btn {
+    width: vw(138);
+    height: vw(50);
+    color: $colorWhite;
+    background-color: $colorBlue;
+    border-radius: vw(2);
+    margin-bottom: vw(10);
+	border: 3px solid transparent;
+	transition: color .3s linear, background-color .3s linear, border .3s linear;
+
+    &:first-child {
+        margin-right: vw(20);
+    }
+
+		&:hover {
+			color: $colorBlue;
+			background-color: $colorWhite;
+			border: 3px solid $colorBlue;
+			transition: color .3s linear, background-color .3s linear, border .3s linear;
+		}	
+
+		&:active {
+			background-color: $colorGreyText;
+		}
+
+		&:focus-visible {
+			border: 3px solid $colorLightBlue;
+		}
+}
+
+.selected__descr-table {
+    width: 100%;
+    margin-bottom: vw(40);
+
+    &-data {
+        height: vw(30);
+        color: $colorGreyText;
+        font-weight: 400;
+        padding-right: vw(10);
+
+        &:nth-child(2n){
+            color: $colorBlue;
+            font-weight: 500;
+        }
+    }
+}
+
+.selected__descr-price {
+    display: flex;
+    margin-bottom: vw(40);
+
+    &-now {
+        display: inline-block;
+        color: $colorDarkRed;
+        font-size: vw($largeFont);
+        line-height: vw($extraLargeLine);
+        margin-right: vw(20);
+    }
+
+    &-before {
+        display: inline-block;
+        color: $colorGreyText;
+        text-decoration: line-through;
+    }
+}
+
+.selected__descr-order-btn {
+    width: vw(157);
+    height: vw(50);
+    background-color: $colorDarkRed;
+    border-radius: vw(2);
+    color: $colorWhite;
+    line-height: vw($mediumLine);
+    font-size: vw($smallFont);
+    font-weight: 700;
+	border: 3px solid transparent;
+	transition: color .3s linear, background-color .3s linear, border .3s linear;
+
+		&:hover {
+			color: $colorDarkRed;
+			background-color: $colorWhite;
+			border: 3px solid $colorDarkRed;
+			transition: color .3s linear, background-color .3s linear, border .3s linear;
+		}	
+
+		&:active {
+			background-color: $colorRed;
+			color: $colorWhite;
+		}
+
+		&:focus-visible {
+			border: 3px solid $colorBlack;
+		}
+}
+
+//Selected-Info
+
+.selected__info-spec {
+	margin-bottom: vw(40);
+
+    &-title {
+        border-bottom: 2px solid $colorBlue;
+        width: max-content;
+        margin-bottom: vw(35);
+    }
+    
+    &-table-data {
+        width: vw(250);
+		height: vw(30);
+		color: $colorGreyText;
+        font-weight: 400;
+
+        &:nth-child(2n){
+            color: $colorBlue;
+            font-weight: 500;
+        }
+    }
+}
+
+.selected__info-use {
+	margin-bottom: vw(115);
+
+	  &-title {
+			margin-bottom: vw(22);
+		}
+
+		&-table-data {
+			width: vw(250);
+			height: vw(30);
+		}
+
+		&-link {
+			margin-right: vw(10);
+			border-bottom: 1px solid $colorBlue;
+			transition: color .3s linear, border-bottom .3s linear, font-weight .3s linear;
+
+			&:hover {
+				color: $colorLightBlue;
+				border-bottom: 1px solid $colorLightBlue;
+				transition: color .3s linear, border-bottom .3s linear, font-weight .3s linear;
+			}
+
+			&:active {
+				border-bottom: 1px solid transparent;
+				font-weight: 600;
+			}
+		}
+}
+
