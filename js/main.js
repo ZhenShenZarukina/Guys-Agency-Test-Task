@@ -4,38 +4,39 @@ const modal = document.querySelector('.modal-window');
 let timeoutID;
 
 const showModal = () => {
-    modal.classList.add('modal-window--visible');
-    overlay.classList.add('modal-overlay--visible');
+  modal.classList.add('modal-window--visible');
+  overlay.classList.add('modal-overlay--visible');
 }
 
 const hideModal = () => {
-    modal.classList.remove('modal-window--visible');
-    overlay.classList.remove('modal-overlay--visible');
+  modal.classList.remove('modal-window--visible');
+  overlay.classList.remove('modal-overlay--visible');
 }
 
 const delayHide = () => {
-    timeoutID = window.setTimeout(hideModal, 3000);
+  timeoutID = window.setTimeout(hideModal, 3000);
 }
 
 const cleanTimeout = () => {
-    window.clearTimeout(timeoutID);
+  window.clearTimeout(timeoutID);
 }
 
 orderBtn.addEventListener('click', () => {
-    cleanTimeout();
-    showModal();
-    delayHide();
+  cleanTimeout();
+  showModal();
+  delayHide();
 });
 
 document.addEventListener('click', (e) => {
-    const target = e.target;
-    const thisModal = target == modal || modal.contains(target);
-    const thisOrderBtn = target == orderBtn;
-    const modalIsActive = modal.classList.contains('modal-window--visible');
+  const target = e.target;
+  const thisModal = target == modal || modal.contains(target);
+  const thisOrderBtn = target == orderBtn;
+  const modalIsActive = modal.classList.contains('modal-window--visible');
     
-    if (!thisModal && !thisOrderBtn && modalIsActive) {
-        hideModal();
-    }
+  if (!thisModal && !thisOrderBtn && modalIsActive) {
+      hideModal();
+  }
+	
 });
 
 

@@ -1,0 +1,172 @@
+
+@media (max-width: 680px) {
+	.container {
+		max-width: 100%;
+		padding: 0 vmin(10);
+  }
+
+//Header-Up    
+
+  .header__up  {
+		padding-top: vmin(10);
+		padding-bottom: vmin(10);
+  }
+
+  .header__nav {
+		&-link {
+			font-size: vmin($extraSmallFont);
+			font-weight: 600;
+		}
+  }
+
+  .header__tel {
+		font-weight: 600;
+		font-size: vmin($extraSmallFont);
+  }
+
+//Header-Down
+
+  .header__logo {
+		&-img {
+			width: vmin(72);
+			height: vmin(11);
+		}
+	}
+
+	.header__catalog {
+		width: vmin(67);
+		height: vmin(13);
+		font-size: vmin($extraSmallFont);
+		padding-left: 0;
+		svg {
+			display: none;
+		}	
+	}
+
+	.header__search {
+		&-input {
+			width: vmin(110);
+			height: vmin(13);
+			font-size: vmin(7);
+			&::placeholder {
+				color: transparent;
+			}
+		}	
+
+		&-btn {
+			top: 10%;
+			svg {
+				width: vmin(10);
+				height: vmin(10);
+			}
+		}	
+	}
+
+	.header__icons {
+		&-account {
+			margin-right: 0;
+		}
+		&-account svg, &-cart svg {
+			width: vmin(15);
+			height: vmin(15);
+		}
+	}
+
+//Goods 
+
+  .goods__subtype {
+		font-size: vmin(6);
+		font-weight: 500;
+	}
+
+	.selected__title {
+		font-size: vmin($extraSmallFont);
+		margin-bottom: vmin(7);
+	}
+
+	.selected__number {
+		font-size: vmin(6);
+	}
+
+//Selected
+
+  .selected__descr {
+		padding-left: 0;
+    padding-right: 0;
+
+		&-image {
+			margin-right: vmin(20)
+		}
+
+		&-order {
+			width: vmin(160);
+			height: vmin(140);
+		}	
+	}
+
+	.selected__descr-model {
+		font-size: vmin(8);
+	}
+
+	.selected__descr-btn, .selected__descr-order-btn {
+    width: vmin(60);
+    height: vmin(20);
+		font-size: vmin(8);
+		font-weight: 500;
+	}	
+
+	.selected__descr-price-before {
+		font-size: vmin(7);
+	}
+
+	.selected__descr-table-data {
+		font-size: vmin(6);
+		height: vmin(12);
+	}
+
+	.selected__info-spec, .selected__info-use {
+		&-title {
+			font-size: vmin($extraSmallFont);
+		}
+		&-table-data {
+			font-size: vmin(6);
+			height: vmin(12);
+			width: vmin(80);
+		}
+	}
+
+//Consult
+
+  .consult {
+		padding: vmin(10) vmin(0);
+
+		&__title {
+			font-size: vmin($semiSmall);
+			margin-bottom: vmin(10);
+		}
+		&__descr {
+			font-size: vmin(8);
+			line-height: vmin(12);
+	  }
+
+	  &__input {
+			width: vmin(140);
+      height: vmin(20);
+
+			&-name::placeholder, &-tel::placeholder {
+				font-size: vmin(10);
+			}
+
+			&-tel-label {
+				font-size: vmin(6);
+			}
+	  }
+		
+		&__form-btn {
+			width: vmin(120);
+			height: vmin(20);
+			font-size: vmin(8);
+			font-weight: 700;
+		}	
+	}
+}

@@ -6,20 +6,20 @@
 //Header-Up
 
 .header__up {
-    display: flex;
-    justify-content: space-between;
-    padding-top: vw(18);
-    padding-bottom: vw(20);
+  display: flex;
+  justify-content: space-between;
+  padding-top: vw(18);
+  padding-bottom: vw(20);
 }
 
 .header__nav {
-    &-list {
-        display: flex;
-    }
+	&-list {
+		display: flex;
+	}
 
-    &-item {
-        margin-right: vw(15);
-        font-weight: 400;
+	&-item {
+		margin-right: vw(15);
+		font-weight: 400;
 		border-bottom: 1px solid transparent;
 		transition: border-bottom .3s linear, color .3s linear;
 
@@ -27,28 +27,28 @@
 			border-bottom: 1px solid $colorBlue;
 			transition: border-bottom .3s linear, color .3s linear;
 		}
-
+	
 		&:active {
 			color: $colorLightBlue;
 			border-bottom: 1px solid transparent;
 		}
-    }
+	}
 }
 
 .header__tel {
-    font-weight: 700;
+  font-weight: 700;
 	border-bottom: 2px solid transparent;
 	transition: border-bottom .3s linear, color .3s linear;
 
-		&:hover {
-			border-bottom: 2px solid $colorBlue;
-			transition: border-bottom .3s linear, color .3s linear;
-		}
+	&:hover {
+		border-bottom: 2px solid $colorBlue;
+		transition: border-bottom .3s linear, color .3s linear;
+	}
 
-		&:active {
-			color: $colorLightBlue;
-			border-bottom: 2px solid transparent;
-		}
+	&:active {
+		color: $colorLightBlue;
+		border-bottom: 2px solid transparent;
+	}
 }
 
 //Header-Down
@@ -60,9 +60,13 @@
 }
 
 .header__logo {
-	width: vw(135);
-	height: vw(22);
 	margin-right: vw(30);
+	margin-top: vw(6);
+
+	&-img {
+		width: vw(135);
+  	height: vw(22);
+	}
 }
 
 .header__catalog {
@@ -76,42 +80,43 @@
 	margin-right: vw(26);
 	padding-left: vw(30);
 	transition: color .3s linear, background-color .3s linear, border .3s linear;
-	  
-	  svg {
+
+	svg {
 		position: absolute;
 		width: vw(21);
 		height: vw(21);
 		left: vw(12);
 		top: 20%;
+
 		path {
 			transition: fill .3s linear;
 		}
-		}
+	}
 
-		&:hover {
-			color: $colorBlue;
-			background-color: $colorWhite;
-			border: 3px solid $colorBlue;
-			transition: color .3s linear, background-color .3s linear, border .3s linear;
-			  svg path {
-				fill: $colorBlue;
-				}
-		}
+	&:hover {
+		color: $colorBlue;
+		background-color: $colorWhite;
+		border: 3px solid $colorBlue;
+		transition: color .3s linear, background-color .3s linear, border .3s linear;
 
-		&:active {
-			background-color: $colorGreyText;
+		svg path {
+			fill: $colorBlue;
 		}
+	}
 
-		&:focus-visible {
-			border: 3px solid $colorLightBlue;
-		}
- 
+	&:active {
+		background-color: $colorGreyText;
+	}
+
+	&:focus-visible {
+		border: 3px solid $colorLightBlue;
+	}
 }
 
 .header__search {
 	position: relative;
 
-	  &-input {
+	&-input {
 		width: vw(813);
 		height: vw(40);
 		border: 1px solid $colorBlue;
@@ -126,18 +131,20 @@
 			color: $colorGreyText;
 			font-weight: 400;
 		}
+
 		&:focus::placeholder {
 			color: transparent;
 		}
-	  }
-	  &-btn {
+	}
+
+	&-btn {
 		position: absolute;
 		right: vw(17);
 		top: 30%;
 
 		svg {
 			width: vw(17);
-		    height: vw(17);
+			height: vw(17);
 			transition: width .3s linear, height .3s linear;
 
 			path {
@@ -147,14 +154,13 @@
 
 		&:hover svg {
 			width: vw(20);
-		    height: vw(20);
+			height: vw(20);
 		}
-
+	
 		&:active svg path {
 			fill: $colorLightBlue;
 		}
-	}
-		
+  }	  		
 }
 
 .header__icons {
@@ -184,7 +190,8 @@
 
 	&-cart {
 		svg {
-			fill: $colorLightBlue;
+			width: vw(30);
+			height: vw(30);
 		
 			path {
 				transition: fill .3s linear;
@@ -194,6 +201,7 @@
 				transition: fill .3s linear;
 			}
 		}
+		
 		&:hover svg path{
 			fill: $colorLightBlue;
 		}

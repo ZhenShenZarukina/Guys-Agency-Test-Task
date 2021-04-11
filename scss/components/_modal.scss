@@ -1,183 +1,184 @@
 .total {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    top: 0; 
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .3s linear, visibility .3s linear;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	top: 0; 
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .3s linear, visibility .3s linear;
 
-    &__content { 
-        box-sizing: border-box;
-        width: vw(595); 
-        height: vw(400); 
-        border-radius: 2px;
-        padding: vw(20);
-        background-color: #fff; 
-        display: none;
-    }
+	&__content { 
+		box-sizing: border-box;
+		width: vw(595); 
+		height: vw(400); 
+		border-radius: 2px;
+		padding: vw(20);
+		background-color: #fff; 
+		display: none;
+	}
 
-    &__title {
-        line-height: vw($largeLine);
-        margin-bottom: vw(40);
-    }
+	&__title {
+		line-height: vw($largeLine);
+		margin-bottom: vw(40);
+	}
 
-    &__sum {
-        color: $colorDarkRed;
-        font-weight: 500;
-        margin-left: vw(3);
-    }
+	&__sum {
+		color: $colorDarkRed;
+		font-weight: 500;
+		margin-left: vw(3);
+	}
 
-    &__btn {
-        width: vw(555);
-        height: vw(50);
-        background-color: $colorRed;
-        border-radius: vw(2);
-        color: $colorWhite;
-        font-weight: 700;
-        border: 3px solid transparent;
-	    transition: color .3s linear, background-color .3s linear, border .3s linear;
+	&__btn {
+		width: vw(555);
+		height: vw(50);
+		background-color: $colorRed;
+		border-radius: vw(2);
+		color: $colorWhite;
+		font-weight: 700;
+		border: 3px solid transparent;
+		transition: color .3s linear, background-color .3s linear, border .3s linear;
 
-		&:hover {
-			color: $colorRed;
-			background-color: $colorWhite;
-			border: 3px solid $colorRed;
-			transition: color .3s linear, background-color .3s linear, border .3s linear;
-		}	
+	  &:hover {
+	  	color: $colorRed;
+		  background-color: $colorWhite;
+		  border: 3px solid $colorRed;
+		  transition: color .3s linear, background-color .3s linear, border .3s linear;
+	  }	
 
-		&:active {
-			background-color: $colorDarkRed;
-			color: $colorWhite;
-		}
-    }
+	  &:active {
+	  	background-color: $colorDarkRed;
+		  color: $colorWhite;
+	  }
+	}
 }
 
 .total__card {
-    display: flex;
-    margin-bottom: vw(8);
-    padding-bottom: vw(9);
-    border-bottom: 1px solid $colorAqua;
-     
-      &-2 {
-          border: none;
-          margin-bottom: vw(10);
-      }
-      
-      &-img {
-        width: vw(100);
-        height: vw(100);
-        margin-right: vw(20);
-        &-pic{
-              max-width: 100%;
-          }  
-      }
+	display: flex;
+  margin-bottom: vw(8);
+  padding-bottom: vw(9);
+  border-bottom: 1px solid $colorAqua;
 
-      &-desr {
-          width: vw(310);
-          margin-right: vw(20);
-      }
+	&-2 {
+		border: none;
+		margin-bottom: vw(10);
+  }
 
-      &-title {
-          font-size: vw($semiSmall);
-          font-weight: 500;
-          margin-bottom: vw(8);
-      }
+	&-img {
+		width: vw(100);
+		height: vw(100);
+		margin-right: vw(20);
 
-      &-price {
-          display: flex;
-          font-weight: 600;
-          color: $colorRed;
-          margin-bottom: vw(10);
+		&-pic{
+			max-width: 100%;
+		}  
+	}
 
-          &-now {
-            display: inline-block;
-            margin-right: vw(10);
-            font-size: vw($semiSmall);
-            line-height: vw($smallLine);
-          }
+	&-desr {
+		width: vw(310);
+		margin-right: vw(20);
+  }
 
-          &-before {
-              display: inline-block;
-              text-decoration: line-through;
-              color: $colorGreyText;
-              font-size: vw($extraSmallFont);
-              line-height: vw($extraSmallLine);
-          }
-        } 
-      &-available {
-          font-weight: 600;
-          font-size: vw($semiSmall);
-      }
-      
-      &-action {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end;
-          margin-left: auto;
-          margin-top: vw(4);
-      }
+	&-title {
+		font-size: vw($semiSmall);
+		font-weight: 500;
+		margin-bottom: vw(8);
+  }
+	
+	&-price {
+		display: flex;
+		font-weight: 600;
+		color: $colorRed;
+		margin-bottom: vw(10);
 
-      &-basket {
-          margin-bottom: vw(17);
-          margin-right: vw(5);
+		&-now {
+			display: inline-block;
+			margin-right: vw(10);
+			font-size: vw($semiSmall);
+			line-height: vw($smallLine);
+		}
 
-            svg {
-                width: vw(22);
-                height: vw(24);
+		&-before {
+			display: inline-block;
+			text-decoration: line-through;
+			color: $colorGreyText;
+			font-size: vw($extraSmallFont);
+			line-height: vw($extraSmallLine);
+		}
+	}
 
-                path {
-                    transition: fill .3s linear;
-                }
-            }
+	&-available {
+		font-weight: 600;
+		font-size: vw($semiSmall);
+  }
 
-            &:hover svg path {
-                fill: $colorLightBlue;
-            }
-      }
+	&-action {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-left: auto;
+		margin-top: vw(4);
+  }
 
-      &-amount {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          box-sizing: border-box;
-          text-align: center;
-          padding: vw(13);
-          width: vw(105);
-          height: vw(51);
-          border: 2px solid $colorBlue;
-          border-radius: 0 vw(2) vw(2) 0;
-          color: $colorBlue;
+	&-basket {
+		margin-bottom: vw(17);
+		margin-right: vw(5);
 
-          &-minus {
-              margin-top: vw(2);
-          }
+		svg {
+			width: vw(22);
+			height: vw(24);
+			path {
+				transition: fill .3s linear;
+			}
+	  }
 
-          &-plus svg, &-minus svg {
-              width: vw(14);
-              height: vw(14);
-          }
+	  &:hover svg path {
+			fill: $colorLightBlue;
+	  }
+  }  
 
-          &-num {
-              display: inline-block;
-              font-size: vw($smallFont);
-              font-weight: 600;
-          }
-      }
+	&-amount {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		box-sizing: border-box;
+		text-align: center;
+		padding: vw(13);
+		width: vw(105);
+		height: vw(51);
+		border: 2px solid $colorBlue;
+		border-radius: 0 vw(2) vw(2) 0;
+		color: $colorBlue;
+
+		&-minus {
+			margin-top: vw(2);
+		}
+
+		&-plus svg, &-minus svg {
+			width: vw(14);
+			height: vw(14);
+		}
+
+		&-num {
+			display: inline-block;
+			font-size: vw($smallFont);
+			font-weight: 600;
+		}
+  }
 }
 
 .modal-overlay--visible {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity .3s linear, visibility .3s linear;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .3s linear, visibility .3s linear;
 }
 
 .modal-window--visible {
-    display: block;
+  display: block;
 }
 
 

@@ -1,82 +1,86 @@
 .goods__type {
-    margin-bottom: vw(43.5);
-    margin-left: vw(1);
+	margin-bottom: vw(43.5);
+  margin-left: vw(1);
 }
 
 .goods__subtype {
-    font-weight: 400;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom .3s linear;
+	font-weight: 400;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .3s linear;
 
-    &:last-child {
-        color: $colorGreyText;
+  &:last-child {
+    color: $colorGreyText;
 		border-bottom: 1px solid transparent;
 		transition: border-bottom .3s linear;
-    }
+  }
 
-    &:hover {
-        border-bottom: 1px solid $colorBlue;
-        transition: border-bottom .3s linear;
-    }
+	&:hover {
+		border-bottom: 1px solid $colorBlue;
+		transition: border-bottom .3s linear;
+	}
 
-    &:active {
-        color: $colorLightBlue;
-        border-bottom: 1px solid transparent;
-    }
+	&:active {
+		color: $colorLightBlue;
+		border-bottom: 1px solid transparent;
+	}
 }
 
 //Selected 
 
 .selected__title {
-    font-size: vw($mediumFont);
-    line-height: vw($largeLine);
-    font-weight: 700;
-    margin-bottom: vw(18);
-    margin-left: vw(-1);
+	font-size: vw($mediumFont);
+  line-height: vw($largeLine);
+  font-weight: 700;
+  margin-bottom: vw(18);
+  margin-left: vw(-1);
 }
 
 .selected__number {
-    display: block;
-    font-weight: 400;
-    margin-bottom: vw(42);
+  display: block;
+  font-weight: 400;
+  margin-bottom: vw(42);
 }
 
 //Selected-Descr
 
 .selected__descr { 
-    display: flex;
-    margin-bottom: vw(92);
-    padding-left: vw(107);
-    padding-right: vw(60);
+  display: flex;
+  margin-bottom: vw(92);
+  padding-left: vw(107);
+  padding-right: vw(60);
 
-     &-image {
-        margin-right: vw(140);
-     }
+  &-image {
+		margin-right: vw(140);
+		img {
+			height: vw(503);
+			width: vw(503);
+		}
+  }
 
-    &-order {
-        width: vw(433);
-        height: vw(465);
-        padding: vw(18);
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-    }
+	&-order {
+		width: vw(433);
+		height: vw(465);
+		padding: vw(18);
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  }
 }
 
 .selected__descr-model {
-    display: block;
-    margin-bottom: vw(23);
+  display: block;
+  margin-bottom: vw(23);
 }
 
 .selected__descr-btn-group {
-    margin-bottom: vw(24);
+  margin-bottom: vw(24);
 }
 
 .selected__descr-btn {
-    width: vw(138);
-    height: vw(50);
-    color: $colorWhite;
-    background-color: $colorBlue;
-    border-radius: vw(2);
-    margin-bottom: vw(10);
+  width: vw(138);
+  height: vw(50);
+  color: $colorWhite;
+  background-color: $colorBlue;
+  border-radius: vw(2);
+  margin-bottom: vw(10);
 	border: 3px solid transparent;
 	transition: color .3s linear, background-color .3s linear, border .3s linear;
 
@@ -101,49 +105,49 @@
 }
 
 .selected__descr-table {
-    width: 100%;
-    margin-bottom: vw(39);
+	width: 100%;
+  margin-bottom: vw(39);
 
     &-data {
-        height: vw(33);
-        color: $colorGreyText;
-        font-weight: 400;
-        padding-right: vw(50);
+      height: vw(33);
+      color: $colorGreyText;
+      font-weight: 400;
+      padding-right: vw(50);
 
-        &:nth-child(2n){
-            color: $colorBlue;
-            font-weight: 500;
-        }
+			&:nth-child(2n) {
+				color: $colorBlue;
+				font-weight: 500;
+		  }
     }
 }
 
 .selected__descr-price {
-    display: flex;
-    margin-bottom: vw(40);
+	display: flex;
+  margin-bottom: vw(40);
 
     &-now {
-        color: $colorDarkRed;
-        font-size: vw($largeFont);
-        line-height: vw($extraLargeLine);
-        margin-right: vw(20);
+      color: $colorDarkRed;
+      font-size: vw($largeFont);
+      line-height: vw($extraLargeLine);
+      margin-right: vw(20);
     }
 
     &-before {
-        color: $colorGreyText;
-        text-decoration: line-through;
-        margin-top: vw(-2);
+      color: $colorGreyText;
+      text-decoration: line-through;
+      margin-top: vw(-2);
     }
 }
 
 .selected__descr-order-btn {
-    width: vw(157);
-    height: vw(50);
-    background-color: $colorDarkRed;
-    border-radius: vw(2);
-    color: $colorWhite;
-    line-height: vw($mediumLine);
-    font-size: vw($smallFont);
-    font-weight: 700;
+  width: vw(157);
+  height: vw(50);
+  background-color: $colorDarkRed;
+  border-radius: vw(2);
+  color: $colorWhite;
+  line-height: vw($mediumLine);
+  font-size: vw($smallFont);
+  font-weight: 700;
 	border: 3px solid transparent;
 	transition: color .3s linear, background-color .3s linear, border .3s linear;
 
@@ -168,59 +172,63 @@
 
 .selected__info-spec {
 	margin-bottom: vw(36);
-
-    &-title {
-        border-bottom: 2px solid $colorBlue;
-        font-size: vw($semiMediumFont);
-        font-weight: 500;
-        padding: vw(4) vw(10);
-        width: max-content;
-        margin-bottom: vw(30);
-    }
-    
-    &-table-data {
-        width: vw(250);
+	
+	&-title {
+		border-bottom: 2px solid $colorBlue;
+		font-size: vw($semiMediumFont);
+		font-weight: 500;
+		padding: vw(4) vw(10);
+		width: max-content;
+		margin-bottom: vw(30);
+	}
+	
+	&-table-data {
+		width: vw(250);
 		height: vw(33);
 		color: $colorGreyText;
-        font-weight: 400;
+		font-weight: 400;
 
-        &:nth-child(2n){
-            color: $colorBlue;
-            font-weight: 500;
-            width: vw(253);
-        }
-    }
+		&:nth-child(2n){
+			color: $colorBlue;
+			font-weight: 500;
+			width: vw(253);
+		}
+	}
 }
 
 .selected__info-use {
 	margin-bottom: vw(112);
+	
+	&-title {
+		font-family: 'HalvarBreit', sans-serif;
+		font-size: vw($semiMediumFont);
+		font-weight: 500;
+		margin-bottom: vw(15);
+	}
 
-	  &-title {
-            font-family: 'HalvarBreit', sans-serif;
-            font-size: vw($semiMediumFont);
-            font-weight: 500;
-			margin-bottom: vw(15);
+	&-table-data {
+		font-weight: 400;
+		width: vw(255);
+		height: vw(33);
+	}
+
+	&-link {
+		display: inline-table;
+		margin-right: vw(7);
+		line-height: vw(15);
+		border-bottom: 1px solid $colorBlue;
+		transition: color .3s linear, border-bottom .3s linear;
+
+		&:hover {
+			color: $colorLightBlue;
+			border-bottom: 1px solid $colorLightBlue;
+			transition: color .3s linear, border-bottom .3s linear;
 		}
 
-		&-table-data {
-            font-weight: 400;
-			width: vw(255);
-			height: vw(33);
+		&:active {
+			color: $colorGreyText;
+			border-bottom: 1px solid transparent;
 		}
-
-		&-link {
-			margin-right: vw(7);
-			text-decoration: underline;
-			transition: color .3s linear;
-
-			&:hover {
-				color: $colorLightBlue;
-				transition: color .3s linear;
-			}
-
-			&:active {
-				color: $colorGreyText;
-			}
-		}
+	}
 }
 

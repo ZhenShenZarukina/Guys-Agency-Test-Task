@@ -168,9 +168,13 @@ body {
 }
 
 .header__logo {
+  margin-right: 2.08333vw;
+  margin-top: 0.41667vw;
+}
+
+.header__logo-img {
   width: 9.375vw;
   height: 1.52778vw;
-  margin-right: 2.08333vw;
 }
 
 .header__catalog {
@@ -327,7 +331,8 @@ body {
 }
 
 .header__icons-cart svg {
-  fill: #0AAEDD;
+  width: 2.08333vw;
+  height: 2.08333vw;
 }
 
 .header__icons-cart svg path {
@@ -411,6 +416,11 @@ body {
 
 .selected__descr-image {
   margin-right: 9.72222vw;
+}
+
+.selected__descr-image img {
+  height: 34.93056vw;
+  width: 34.93056vw;
 }
 
 .selected__descr-order {
@@ -576,20 +586,24 @@ body {
 }
 
 .selected__info-use-link {
+  display: inline-table;
   margin-right: 0.48611vw;
-  text-decoration: underline;
-  -webkit-transition: color .3s linear;
-  transition: color .3s linear;
+  line-height: 1.04167vw;
+  border-bottom: 1px solid #002051;
+  -webkit-transition: color .3s linear, border-bottom .3s linear;
+  transition: color .3s linear, border-bottom .3s linear;
 }
 
 .selected__info-use-link:hover {
   color: #0AAEDD;
-  -webkit-transition: color .3s linear;
-  transition: color .3s linear;
+  border-bottom: 1px solid #0AAEDD;
+  -webkit-transition: color .3s linear, border-bottom .3s linear;
+  transition: color .3s linear, border-bottom .3s linear;
 }
 
 .selected__info-use-link:active {
   color: #99A6B9;
+  border-bottom: 1px solid transparent;
 }
 
 .consult {
@@ -936,5 +950,150 @@ body {
 
 .modal-window--visible {
   display: block;
+}
+
+@media (max-width: 680px) {
+  .container {
+    max-width: 100%;
+    padding: 0 3.125vmin;
+  }
+  .header__up {
+    padding-top: 3.125vmin;
+    padding-bottom: 3.125vmin;
+  }
+  .header__nav-link {
+    font-size: 3.125vmin;
+    font-weight: 600;
+  }
+  .header__tel {
+    font-weight: 600;
+    font-size: 3.125vmin;
+  }
+  .header__logo-img {
+    width: 22.5vmin;
+    height: 3.4375vmin;
+  }
+  .header__catalog {
+    width: 20.9375vmin;
+    height: 4.0625vmin;
+    font-size: 3.125vmin;
+    padding-left: 0;
+  }
+  .header__catalog svg {
+    display: none;
+  }
+  .header__search-input {
+    width: 34.375vmin;
+    height: 4.0625vmin;
+    font-size: 2.1875vmin;
+  }
+  .header__search-input::-webkit-input-placeholder {
+    color: transparent;
+  }
+  .header__search-input:-ms-input-placeholder {
+    color: transparent;
+  }
+  .header__search-input::-ms-input-placeholder {
+    color: transparent;
+  }
+  .header__search-input::placeholder {
+    color: transparent;
+  }
+  .header__search-btn {
+    top: 10%;
+  }
+  .header__search-btn svg {
+    width: 3.125vmin;
+    height: 3.125vmin;
+  }
+  .header__icons-account {
+    margin-right: 0;
+  }
+  .header__icons-account svg, .header__icons-cart svg {
+    width: 4.6875vmin;
+    height: 4.6875vmin;
+  }
+  .goods__subtype {
+    font-size: 1.875vmin;
+    font-weight: 500;
+  }
+  .selected__title {
+    font-size: 3.125vmin;
+    margin-bottom: 2.1875vmin;
+  }
+  .selected__number {
+    font-size: 1.875vmin;
+  }
+  .selected__descr {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .selected__descr-image {
+    margin-right: 6.25vmin;
+  }
+  .selected__descr-order {
+    width: 50vmin;
+    height: 43.75vmin;
+  }
+  .selected__descr-model {
+    font-size: 2.5vmin;
+  }
+  .selected__descr-btn, .selected__descr-order-btn {
+    width: 18.75vmin;
+    height: 6.25vmin;
+    font-size: 2.5vmin;
+    font-weight: 500;
+  }
+  .selected__descr-price-before {
+    font-size: 2.1875vmin;
+  }
+  .selected__descr-table-data {
+    font-size: 1.875vmin;
+    height: 3.75vmin;
+  }
+  .selected__info-spec-title, .selected__info-use-title {
+    font-size: 3.125vmin;
+  }
+  .selected__info-spec-table-data, .selected__info-use-table-data {
+    font-size: 1.875vmin;
+    height: 3.75vmin;
+    width: 25vmin;
+  }
+  .consult {
+    padding: 3.125vmin 0vmin;
+  }
+  .consult__title {
+    font-size: 4.375vmin;
+    margin-bottom: 3.125vmin;
+  }
+  .consult__descr {
+    font-size: 2.5vmin;
+    line-height: 3.75vmin;
+  }
+  .consult__input {
+    width: 43.75vmin;
+    height: 6.25vmin;
+  }
+  .consult__input-name::-webkit-input-placeholder, .consult__input-tel::-webkit-input-placeholder {
+    font-size: 3.125vmin;
+  }
+  .consult__input-name:-ms-input-placeholder, .consult__input-tel:-ms-input-placeholder {
+    font-size: 3.125vmin;
+  }
+  .consult__input-name::-ms-input-placeholder, .consult__input-tel::-ms-input-placeholder {
+    font-size: 3.125vmin;
+  }
+  .consult__input-name::placeholder, .consult__input-tel::placeholder {
+    font-size: 3.125vmin;
+  }
+  .consult__input-tel-label {
+    font-size: 1.875vmin;
+  }
+  .consult__form-btn {
+    width: 37.5vmin;
+    height: 6.25vmin;
+    font-size: 2.5vmin;
+    font-weight: 700;
+  }
 }
 /*# sourceMappingURL=main.css.map */
