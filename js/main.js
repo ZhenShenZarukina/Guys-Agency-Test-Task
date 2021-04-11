@@ -21,7 +21,7 @@ const cleanTimeout = () => {
     window.clearTimeout(timeoutID);
 }
 
-orderBtn.addEventListener('click', (e) => {
+orderBtn.addEventListener('click', () => {
     cleanTimeout();
     showModal();
     delayHide();

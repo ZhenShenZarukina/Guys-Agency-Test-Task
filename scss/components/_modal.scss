@@ -16,6 +16,7 @@
         box-sizing: border-box;
         width: vw(595); 
         height: vw(400); 
+        border-radius: 2px;
         padding: vw(20);
         background-color: #fff; 
         display: none;
@@ -28,6 +29,8 @@
 
     &__sum {
         color: $colorDarkRed;
+        font-weight: 500;
+        margin-left: vw(3);
     }
 
     &__btn {
@@ -56,12 +59,13 @@
 
 .total__card {
     display: flex;
-    margin-bottom: vw(10);
-    padding-bottom: vw(10);
+    margin-bottom: vw(8);
+    padding-bottom: vw(9);
     border-bottom: 1px solid $colorAqua;
      
       &-2 {
           border: none;
+          margin-bottom: vw(10);
       }
       
       &-img {
@@ -81,19 +85,20 @@
       &-title {
           font-size: vw($semiSmall);
           font-weight: 500;
-          margin-bottom: vw(10);
+          margin-bottom: vw(8);
       }
 
       &-price {
           display: flex;
           font-weight: 600;
           color: $colorRed;
-          line-height: vw($smallLine);
           margin-bottom: vw(10);
 
           &-now {
             display: inline-block;
             margin-right: vw(10);
+            font-size: vw($semiSmall);
+            line-height: vw($smallLine);
           }
 
           &-before {
@@ -114,10 +119,12 @@
           flex-direction: column;
           align-items: flex-end;
           margin-left: auto;
+          margin-top: vw(4);
       }
 
       &-basket {
-          margin-bottom: vw(15);
+          margin-bottom: vw(17);
+          margin-right: vw(5);
 
             svg {
                 width: vw(22);
@@ -134,14 +141,21 @@
       }
 
       &-amount {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
           box-sizing: border-box;
           text-align: center;
-          padding: vw(15);
-          width: vw(103);
-          height: vw(50);
-          border: 1px solid $colorBlue;
+          padding: vw(13);
+          width: vw(105);
+          height: vw(51);
+          border: 2px solid $colorBlue;
           border-radius: 0 vw(2) vw(2) 0;
           color: $colorBlue;
+
+          &-minus {
+              margin-top: vw(2);
+          }
 
           &-plus svg, &-minus svg {
               width: vw(14);
@@ -149,7 +163,9 @@
           }
 
           &-num {
-              padding: vw(10);
+              display: inline-block;
+              font-size: vw($smallFont);
+              font-weight: 600;
           }
       }
 }

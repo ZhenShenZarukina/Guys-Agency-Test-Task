@@ -751,6 +751,7 @@ body {
           box-sizing: border-box;
   width: 41.31944vw;
   height: 27.77778vw;
+  border-radius: 2px;
   padding: 1.38889vw;
   background-color: #fff;
   display: none;
@@ -763,6 +764,8 @@ body {
 
 .total__sum {
   color: #B70F25;
+  font-weight: 500;
+  margin-left: 0.20833vw;
 }
 
 .total__btn {
@@ -794,13 +797,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 0.69444vw;
-  padding-bottom: 0.69444vw;
+  margin-bottom: 0.55556vw;
+  padding-bottom: 0.625vw;
   border-bottom: 1px solid #EAF9FC;
 }
 
 .total__card-2 {
   border: none;
+  margin-bottom: 0.69444vw;
 }
 
 .total__card-img {
@@ -821,7 +825,7 @@ body {
 .total__card-title {
   font-size: 0.97222vw;
   font-weight: 500;
-  margin-bottom: 0.69444vw;
+  margin-bottom: 0.55556vw;
 }
 
 .total__card-price {
@@ -830,13 +834,14 @@ body {
   display: flex;
   font-weight: 600;
   color: #E83850;
-  line-height: 1.35417vw;
   margin-bottom: 0.69444vw;
 }
 
 .total__card-price-now {
   display: inline-block;
   margin-right: 0.69444vw;
+  font-size: 0.97222vw;
+  line-height: 1.35417vw;
 }
 
 .total__card-price-before {
@@ -864,10 +869,12 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-left: auto;
+  margin-top: 0.27778vw;
 }
 
 .total__card-basket {
-  margin-bottom: 1.04167vw;
+  margin-bottom: 1.18056vw;
+  margin-right: 0.34722vw;
 }
 
 .total__card-basket svg {
@@ -885,15 +892,28 @@ body {
 }
 
 .total__card-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
-  padding: 1.04167vw;
-  width: 7.15278vw;
-  height: 3.47222vw;
-  border: 1px solid #002051;
+  padding: 0.90278vw;
+  width: 7.29167vw;
+  height: 3.54167vw;
+  border: 2px solid #002051;
   border-radius: 0 0.13889vw 0.13889vw 0;
   color: #002051;
+}
+
+.total__card-amount-minus {
+  margin-top: 0.13889vw;
 }
 
 .total__card-amount-plus svg, .total__card-amount-minus svg {
@@ -902,7 +922,9 @@ body {
 }
 
 .total__card-amount-num {
-  padding: 0.69444vw;
+  display: inline-block;
+  font-size: 1.11111vw;
+  font-weight: 600;
 }
 
 .modal-overlay--visible {
