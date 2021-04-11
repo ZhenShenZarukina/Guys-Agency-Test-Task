@@ -21,14 +21,21 @@ const cleanTimeout = () => {
     window.clearTimeout(timeoutID);
 }
 
-orderBtn.addEventListener('click', () => {
-    
+orderBtn.addEventListener('click', (e) => {
     cleanTimeout();
     showModal();
     delayHide();
-
-    overlay.addEventListener('click', () =>{
-        hideModal();
-    }); 
-
 });
+
+document.addEventListener('click', (e) => {
+    const target = e.target;
+    const thisModal = target == modal || modal.contains(target);
+    const thisOrderBtn = target == orderBtn;
+    const modalIsActive = modal.classList.contains('modal-window--visible');
+    
+    if (!thisModal && !thisOrderBtn && modalIsActive) {
+        hideModal();
+    }
+});
+
+
