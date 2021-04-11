@@ -1,6 +1,6 @@
 .header {
 	border-bottom: 1px solid $colorAqua;
-	margin-bottom: vw(40);
+	margin-bottom: vw(37);
 }
 
 //Header-Up
@@ -8,7 +8,7 @@
 .header__up {
     display: flex;
     justify-content: space-between;
-    padding-top: vw(20);
+    padding-top: vw(18);
     padding-bottom: vw(20);
 }
 
@@ -73,15 +73,15 @@
 	border-radius: vw(2);
 	color: $colorWhite;
 	background-color: $colorBlue;
-	margin-right: vw(20);
-	padding-left: vw(10);
+	margin-right: vw(26);
+	padding-left: vw(30);
 	transition: color .3s linear, background-color .3s linear, border .3s linear;
 	  
 	  svg {
 		position: absolute;
 		width: vw(21);
 		height: vw(21);
-		left: vw(10);
+		left: vw(12);
 		top: 20%;
 		path {
 			transition: fill .3s linear;
@@ -132,8 +132,8 @@
 	  }
 	  &-btn {
 		position: absolute;
-		right: vw(10);
-		top: 25%;
+		right: vw(17);
+		top: 30%;
 
 		svg {
 			width: vw(17);
@@ -159,45 +159,43 @@
 
 .header__icons {
 	margin-left: auto;
+	padding-top: vw(5);
 
 	&-account {
-		margin-right: vw(15);
+		margin-right: vw(25);
 
 		svg {
 			width: vw(30);
 			height: vw(30);
-			transition: width .3s linear, height .3s linear;
+			
 			path {
 				transition: fill .3s linear;
 			}
 		}
 
-		&:hover svg{
-			width: vw(33);
-			height: vw(33);
+		&:hover svg path{
+			fill: $colorLightBlue;
 		}
 
 		&:active svg path {
-			fill: $colorLightBlue;
+			fill: $colorGreyText;
 		}
 	}
 
 	&-cart {
 		svg {
-			width: vw(30);
-			height: vw(30);
-			transition: width .3s linear, height .3s linear;
+			fill: $colorLightBlue;
+		
 			path {
 				transition: fill .3s linear;
 			}
 		}
-		&:hover svg{
-			width: vw(33);
-			height: vw(33);
+		&:hover svg path{
+			fill: $colorLightBlue;
 		}
 
 		&:active svg path {
-			fill: $colorLightBlue;
+			fill: $colorGreyText;
 		}
 	}
 }

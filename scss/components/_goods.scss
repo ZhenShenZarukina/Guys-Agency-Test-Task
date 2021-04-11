@@ -1,5 +1,6 @@
 .goods__type {
-    margin-bottom: vw(40);
+    margin-bottom: vw(43.5);
+    margin-left: vw(1);
 }
 
 .goods__subtype {
@@ -30,42 +31,43 @@
     font-size: vw($mediumFont);
     line-height: vw($largeLine);
     font-weight: 700;
-    margin-bottom: vw(10);
+    margin-bottom: vw(18);
+    margin-left: vw(-1);
 }
 
 .selected__number {
     display: block;
     font-weight: 400;
-    margin-bottom: vw(40);
+    margin-bottom: vw(42);
 }
 
 //Selected-Descr
 
 .selected__descr { 
     display: flex;
-    margin-bottom: vw(100);
+    margin-bottom: vw(92);
     padding-left: vw(107);
     padding-right: vw(60);
 
-    &-image {
+     &-image {
         margin-right: vw(140);
-    }
+     }
 
     &-order {
         width: vw(433);
         height: vw(465);
-        padding: vw(20);
+        padding: vw(18);
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     }
 }
 
 .selected__descr-model {
     display: block;
-    margin-bottom: vw(20);
+    margin-bottom: vw(23);
 }
 
 .selected__descr-btn-group {
-    margin-bottom: vw(30);
+    margin-bottom: vw(24);
 }
 
 .selected__descr-btn {
@@ -79,7 +81,7 @@
 	transition: color .3s linear, background-color .3s linear, border .3s linear;
 
     &:first-child {
-        margin-right: vw(20);
+        margin-right: vw(16);
     }
 
 		&:hover {
@@ -100,13 +102,13 @@
 
 .selected__descr-table {
     width: 100%;
-    margin-bottom: vw(40);
+    margin-bottom: vw(39);
 
     &-data {
-        height: vw(30);
+        height: vw(33);
         color: $colorGreyText;
         font-weight: 400;
-        padding-right: vw(10);
+        padding-right: vw(50);
 
         &:nth-child(2n){
             color: $colorBlue;
@@ -120,7 +122,6 @@
     margin-bottom: vw(40);
 
     &-now {
-        display: inline-block;
         color: $colorDarkRed;
         font-size: vw($largeFont);
         line-height: vw($extraLargeLine);
@@ -128,9 +129,9 @@
     }
 
     &-before {
-        display: inline-block;
         color: $colorGreyText;
         text-decoration: line-through;
+        margin-top: vw(-2);
     }
 }
 
@@ -166,52 +167,58 @@
 //Selected-Info
 
 .selected__info-spec {
-	margin-bottom: vw(40);
+	margin-bottom: vw(36);
 
     &-title {
         border-bottom: 2px solid $colorBlue;
+        font-size: vw($semiMediumFont);
+        font-weight: 500;
+        padding: vw(4) vw(10);
         width: max-content;
-        margin-bottom: vw(35);
+        margin-bottom: vw(30);
     }
     
     &-table-data {
         width: vw(250);
-		height: vw(30);
+		height: vw(33);
 		color: $colorGreyText;
         font-weight: 400;
 
         &:nth-child(2n){
             color: $colorBlue;
             font-weight: 500;
+            width: vw(253);
         }
     }
 }
 
 .selected__info-use {
-	margin-bottom: vw(115);
+	margin-bottom: vw(112);
 
 	  &-title {
-			margin-bottom: vw(22);
+            font-family: 'HalvarBreit', sans-serif;
+            font-size: vw($semiMediumFont);
+            font-weight: 500;
+			margin-bottom: vw(15);
 		}
 
 		&-table-data {
-			width: vw(250);
-			height: vw(30);
+            font-weight: 400;
+			width: vw(255);
+			height: vw(33);
 		}
 
 		&-link {
-			margin-right: vw(10);
-			border-bottom: 1px solid $colorBlue;
-			transition: color .3s linear, border-bottom .3s linear, font-weight .3s linear;
+			margin-right: vw(7);
+			text-decoration: underline;
+			transition: color .3s linear, font-weight .3s linear;
 
 			&:hover {
 				color: $colorLightBlue;
-				border-bottom: 1px solid $colorLightBlue;
-				transition: color .3s linear, border-bottom .3s linear, font-weight .3s linear;
+				transition: color .3s linear, font-weight .3s linear;
 			}
 
 			&:active {
-				border-bottom: 1px solid transparent;
 				font-weight: 600;
 			}
 		}

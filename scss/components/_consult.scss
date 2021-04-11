@@ -1,7 +1,7 @@
 .consult {
     background-color: $colorBlue;
     color: $colorWhite;
-    padding: vw(87) vw(200);
+    padding: vw(87) vw(106);
 
     &__title {
         font-size: vw($mediumFont);
@@ -27,7 +27,7 @@
         padding-bottom: 0;
 
         &-name {
-            margin-right: vw(28);
+            margin-right: vw(24);
 
             &::placeholder {
                 position: absolute;
@@ -45,7 +45,6 @@
             &-label {
                 position: absolute;
                 font-size: vw($extraSmallFont);
-                line-height: vw($extraSmallLine);
                 color: $colorGreyText;
             }
         }
