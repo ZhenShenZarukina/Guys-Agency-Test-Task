@@ -6,21 +6,21 @@
 .goods__subtype {
     font-weight: 400;
     border-bottom: 1px solid transparent;
-    transition: border-bottom .3s linear, font-weight .3s linear;
+    transition: border-bottom .3s linear;
 
     &:last-child {
         color: $colorGreyText;
 		border-bottom: 1px solid transparent;
-		transition: border-bottom .3s linear, font-weight .3s linear;
+		transition: border-bottom .3s linear;
     }
 
     &:hover {
         border-bottom: 1px solid $colorBlue;
-        transition: border-bottom .3s linear, font-weight .3s linear;
+        transition: border-bottom .3s linear;
     }
 
     &:active {
-        font-weight: 500;
+        color: $colorLightBlue;
         border-bottom: 1px solid transparent;
     }
 }
@@ -211,15 +211,15 @@
 		&-link {
 			margin-right: vw(7);
 			text-decoration: underline;
-			transition: color .3s linear, font-weight .3s linear;
+			transition: color .3s linear;
 
 			&:hover {
 				color: $colorLightBlue;
-				transition: color .3s linear, font-weight .3s linear;
+				transition: color .3s linear;
 			}
 
 			&:active {
-				font-weight: 600;
+				color: $colorGreyText;
 			}
 		}
 }

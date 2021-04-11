@@ -68,6 +68,9 @@
         width: vw(100);
         height: vw(100);
         margin-right: vw(20);
+          img{
+              max-width: 100%;
+          }  
       }
 
       &-desr {

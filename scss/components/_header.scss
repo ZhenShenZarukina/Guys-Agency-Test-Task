@@ -21,15 +21,15 @@
         margin-right: vw(15);
         font-weight: 400;
 		border-bottom: 1px solid transparent;
-		transition: border-bottom .3s linear, font-weight .3s linear;
+		transition: border-bottom .3s linear, color .3s linear;
 
 		&:hover {
 			border-bottom: 1px solid $colorBlue;
-			transition: border-bottom .3s linear, font-weight .3s linear;
+			transition: border-bottom .3s linear, color .3s linear;
 		}
 
 		&:active {
-			font-weight: 500;
+			color: $colorLightBlue;
 			border-bottom: 1px solid transparent;
 		}
     }
@@ -189,13 +189,25 @@
 			path {
 				transition: fill .3s linear;
 			}
+
+			circle {
+				transition: fill .3s linear;
+			}
 		}
 		&:hover svg path{
 			fill: $colorLightBlue;
 		}
 
+		&:hover svg circle{
+			fill: rgba($colorBlue, .9);
+		}
+
 		&:active svg path {
 			fill: $colorGreyText;
+		}
+
+		&:active svg circle{
+			fill: rgba($colorBlack, .9);
 		}
 	}
 }
