@@ -1,6 +1,6 @@
 # Landing-Page using SASS 
 
-**Describtion:** *Click [here](https://zhenshenzarukina.github.io/Skillbox-course-work/) to see*
+**Describtion:** *Click [here](https://zhenshenzarukina.github.io/Landing-Page-SASS/) to see*
 
 **I mastered:**
 *  CSS animations
